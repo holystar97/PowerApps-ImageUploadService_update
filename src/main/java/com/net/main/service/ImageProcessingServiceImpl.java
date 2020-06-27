@@ -34,7 +34,7 @@ public class ImageProcessingServiceImpl implements ImageProcessingService {
 			//이미지 감지
 			imageDto = imageDetectionDao.doDection("이미지 더미 데이터");
 
-			//이미지 인식(이미지 분석 후 ResulVO를 추출하는 곳인듯??)
+			//이미지 인식(이미지 분석 후 ResulVO를 추출하는 곳)
 			resultVo = imageRecognitionDao.doRecognition(imageDto);
 			if(resultVo == null) {
 				System.out.println("## 이미지 인식 실패 ##");
